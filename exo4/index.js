@@ -16,7 +16,6 @@ buttonRecherche.onclick = () => {
     if(ingr.length < 1){
         alert("Enter something")
     }else{
-        console.log("recette avec : "+ingr)
         getRecipe(ingr)
         .then((data)=>{
             if (data.results.length<1) {
