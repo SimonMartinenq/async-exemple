@@ -8,7 +8,7 @@ def serveur():
 
 
 async def serveur_async():
-    task1 = asyncio.create_task(cuisinier_async('Burger',1))
+    task1 = asyncio.create_task(cuisinier_async('Burger',5))
     task2 = asyncio.create_task(cuisinier_async('Salade César',1))
     task3 = asyncio.create_task(cuisinier_async('Côte de boeuf',3))
     await task1
